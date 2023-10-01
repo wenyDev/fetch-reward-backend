@@ -3,12 +3,16 @@ Our users have points in their accounts. Users only see a single balance in thei
 
 # How to start it?
 1. Install Node.js and NPM
-  A. Via installer: https://nodejs.org/en/download
-  B. Via package manager:https://nodejs.org/en/download/package-manager
+  > A. Via installer: https://nodejs.org/en/download
+  > B. Via package manager:https://nodejs.org/en/download/package-manager
 
 2. Git clone this porject
-   > git clone https://github.com/wenyDev/fetch-reward-backend.git
+   ```
+   git clone https://github.com/wenyDev/fetch-reward-backend.git
+   ```
 
 3. Run it and check if it is runing by seeing "Listening on port 8000"
-   > npm app.js
-
+   ```
+   npm app.js
+   ```
+# How to test it?
