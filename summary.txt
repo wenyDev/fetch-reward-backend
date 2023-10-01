@@ -31,10 +31,15 @@ situations, potentially leading to incorrect point deductions.
 
 3. What has been a favorite school/personal project thus far? What about it that challenged you?
 One of my favorite projects so far has been developing a YouTube clone as a full-stack web project. It was both a learning curve and an exciting venture, giving me the chance to apply a variety of technical skills and to immerse myself in different technologies.
+
 The task was challenging as it involved multiple aspects, from creating user login interfaces and video display pages using Typescript and NextJS, to deploying the app on Google Cloud Run using Docker containers. This ensured that the app was scalable and that the environment was consistent.
+
 One of the key challenges was to incorporate user authentication processes such as account creation, login, logout, and password reset, which was done securely by storing user data and video metadata in Firebase, a NoSQL database in GCP.
+
 Another major task was optimizing videos to a 360p resolution using ffmpeg to enhance user accessibility and experience. This required learning new tools and techniques and was crucial to the project's success. Creating an efficient video uploading workflow using Google Buckets and Pub/Sub was also a significant part of the project, ensuring that raw and processed videos were stored separately.
+
 Working in a team of four, communication was key. We used Git for cooperation, and we had regular meetings on Zoom and tracked our progress through Excel, which helped us stay organized and on track. Showcasing the ten most recently uploaded videos on the homepage was a nice touch to keep the content fresh and engaging.
+
 The project was demanding but incredibly rewarding. I learned a lot about development, deployment, and teamwork and felt a great sense of accomplishment when it all came together.
 
 
