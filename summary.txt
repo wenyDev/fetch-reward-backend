@@ -1,0 +1,40 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+I chose JavaScript as the programming language for this coding exercise due to its inherent 
+compatibility with developing REST APIs. JavaScript operates seamlessly with Node and npm, 
+which have robust availability and offer a comprehensive package ecosystem that supports 
+various needs in development. The document’s requirement for a REST API made JavaScript the 
+logical and practical first choice for this task.
+
+2. What are the advantages and disadvantages of your solution?
+Advantages:
+1. The solution is simplistic and user-friendly, making the codebase easy to understand, 
+maintain, and enhance.
+2. It efficiently handles transactions and calculates the balance of points for different payers.
+
+Disadvantages:
+1. The solution does not adequately handle scenarios where transaction points are negative, and the 
+absolute value of the negative number is too large, causing a deduction discrepancy.
+2 .In the instance where a transaction points to a deficit, i.e., negative value, it would fail 
+to reconcile it with the available points, leading to potential inaccuracies in point allocations.
+Example:
+Consider the scenario:
+json
+Copy code
+{ "payer": "DANNON", "points": 300, "timestamp": "2022-10-31T10:00:00Z" }
+{ "payer": "UNILEVER", "points": 200, "timestamp": "2022-10-31T11:00:00Z" }
+{ "payer": "DANNON", "points": -200, "timestamp": "2022-10-31T15:00:00Z" }
+{ "payer": "MILLER COORS", "points": 10000, "timestamp": "2022-11-01T14:00:00Z" }
+{ "payer": "DANNON", "points": 1000, "timestamp": "2022-11-02T14:00:00Z" }
+If the third transaction is not -200 but -400, the current function does not effectively handle such 
+situations, potentially leading to incorrect point deductions.
+
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+One of my favorite projects so far has been developing a YouTube clone as a full-stack web project. It was both a learning curve and an exciting venture, giving me the chance to apply a variety of technical skills and to immerse myself in different technologies.
+The task was challenging as it involved multiple aspects, from creating user login interfaces and video display pages using Typescript and NextJS, to deploying the app on Google Cloud Run using Docker containers. This ensured that the app was scalable and that the environment was consistent.
+One of the key challenges was to incorporate user authentication processes such as account creation, login, logout, and password reset, which was done securely by storing user data and video metadata in Firebase, a NoSQL database in GCP.
+Another major task was optimizing videos to a 360p resolution using ffmpeg to enhance user accessibility and experience. This required learning new tools and techniques and was crucial to the project's success. Creating an efficient video uploading workflow using Google Buckets and Pub/Sub was also a significant part of the project, ensuring that raw and processed videos were stored separately.
+Working in a team of four, communication was key. We used Git for cooperation, and we had regular meetings on Zoom and tracked our progress through Excel, which helped us stay organized and on track. Showcasing the ten most recently uploaded videos on the homepage was a nice touch to keep the content fresh and engaging.
+The project was demanding but incredibly rewarding. I learned a lot about development, deployment, and teamwork and felt a great sense of accomplishment when it all came together.
+
+

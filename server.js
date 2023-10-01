@@ -60,6 +60,7 @@ router.get('/balance', (req, res) => {
     balance[transaction.payer] += transaction.points;
   });
 
+
   res.status(200).json(balance);
 });
 
