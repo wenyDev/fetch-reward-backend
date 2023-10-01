@@ -31,12 +31,14 @@ Calling the /add endpoint with the following transactions (each line being a sin
 ```
 <img width="1087" alt="Screenshot 2023-10-01 at 12 52 01 PM" src="https://github.com/wenyDev/fetch-reward-backend/assets/132880473/cdd92bd2-b944-4e3b-871d-f148f648a252">
 4. Create new request to test spend function
+
 Then calling the /spend endpoint with the following call
 ```
 { "points": 5000 }
 ```
 <img width="1100" alt="Screenshot 2023-10-01 at 12 54 23 PM" src="https://github.com/wenyDev/fetch-reward-backend/assets/132880473/104887ba-710b-488c-97b9-c0d0e98c0487">
 4. Create new request to test balance function
+
 Should have a call to /balance endpoint returning the following response:
 ```
 {
