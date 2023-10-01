@@ -6,6 +6,9 @@ Our users have points in their accounts. Users only see a single balance in thei
   > A. Via installer: https://nodejs.org/en/download
 
   > B. Via package manager:https://nodejs.org/en/download/package-manager
+```
+npm install
+```
 
 2. Git clone this porject
    ```
